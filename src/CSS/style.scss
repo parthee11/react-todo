@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    .inputField {
+        position: relative;
+        margin-top: 2rem;
+        input {
+            width: 300px;
+            padding: 1rem;
+            &:focus + label, &:valid + label {
+                top: -22px;
+                left: 32px;
+            }
+        }
+        label {
+            position: absolute;
+            top: 14px;
+            left: 56px;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+    }
+    button {
+        width: 336px;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+    }
+}
+
+
+
+.taskList {
+    max-width: 400px;
+    margin: auto;
+    list-style: none;
+    .task {
+        display: flex;
+        margin: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dotted rgba(0, 0, 255, 0.199);
+        .striked {
+            text-decoration: line-through;
+        }
+        .action {
+            display: inherit;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            .remove { 
+                width: 20px;
+                height: 20px;
+                margin-left: 1rem;
+                cursor: pointer;
+                button {
+                    pointer-events: none;
+                    width: inherit;
+                    height: inherit;
+                    font-size: 1rem;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    color: red;
+                    background: none;
+                }
+            }
+            .completed {
+                width: 18px;
+                height: 18px;
+                input {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}

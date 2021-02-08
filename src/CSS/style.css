@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+form .inputField {
+  position: relative;
+  margin-top: 2rem;
+}
+
+form .inputField input {
+  width: 300px;
+  padding: 1rem;
+}
+
+form .inputField input:focus + label, form .inputField input:valid + label {
+  top: -22px;
+  left: 32px;
+}
+
+form .inputField label {
+  position: absolute;
+  top: 14px;
+  left: 56px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+form button {
+  width: 336px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.taskList {
+  max-width: 400px;
+  margin: auto;
+  list-style: none;
+}
+
+.taskList .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dotted rgba(0, 0, 255, 0.199);
+}
+
+.taskList .task .striked {
+  text-decoration: line-through;
+}
+
+.taskList .task .action {
+  display: inherit;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.taskList .task .action .remove {
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.taskList .task .action .remove button {
+  pointer-events: none;
+  width: inherit;
+  height: inherit;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: red;
+  background: none;
+}
+
+.taskList .task .action .completed {
+  width: 18px;
+  height: 18px;
+}
+
+.taskList .task .action .completed input {
+  width: inherit;
+  height: inherit;
+}
+/*# sourceMappingURL=style.css.map */
